@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -9,12 +10,32 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+function TopNavigation() {
+  return (
+    <nav className="bg-stone-900 p-4">
+      <div className="container mx-auto">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="text-xl font-bold text-white">
+            Gallery
+          </Link>
+          <Link href="/" className="text-xl font-bold text-white">
+            Sign In
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body className="flex flex-col gap-4">
+        <TopNavigation />
+        {children}
+      </body>
     </html>
   );
 }
