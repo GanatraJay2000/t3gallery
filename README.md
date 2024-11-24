@@ -7,7 +7,7 @@
 - [x] Tidy up build process
 - [x] Actually set up a database (neon)
 - [x] Attach database to UI
-- [ ] Add Auth (w/ clerk)
+- [x] Add Auth (w/ clerk)
 - [ ] Add image upload
 - [ ] Error Management (w/ Sentry)
 - [ ] Routing/ image upload (parallel route)
