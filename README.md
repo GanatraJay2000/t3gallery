@@ -10,7 +10,7 @@
 - [x] Add Auth (w/ clerk)
 - [x] Add image upload
 - [x] "taint" (server-only)
-- [ ] Error Management (w/ Sentry)
+- [x] Error Management (w/ Sentry)
 - [ ] Routing/ image upload (parallel route)
 - [ ] Delete button (w/ Server actions)
 - [ ] Anlytics (Posthog)
