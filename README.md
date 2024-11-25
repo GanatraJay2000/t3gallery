@@ -8,8 +8,8 @@
 - [x] Actually set up a database (neon)
 - [x] Attach database to UI
 - [x] Add Auth (w/ clerk)
-- [ ] Add image upload
-- [ ] "taint" (server-only)
+- [x] Add image upload
+- [x] "taint" (server-only)
 - [ ] Error Management (w/ Sentry)
 - [ ] Routing/ image upload (parallel route)
 - [ ] Delete button (w/ Server actions)
