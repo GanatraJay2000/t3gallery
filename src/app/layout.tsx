@@ -35,9 +35,9 @@ export default function RootLayout({
             routerConfig={extractRouterConfig(ourFileRouter)}
           />
           <TopNavigation />
-          {children}
+          <div className="px-2">{children}</div>
           {modal}
-          <div id="modal-route"></div>
+          <div id="modal-root"></div>
         </body>
       </html>
     </ClerkProvider>
