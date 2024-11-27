@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
-        <body className="flex flex-col gap-4">
+        <body>
           <NextSSRPlugin
             /**
              * The `extractRouterConfig` will extract **only** the route configs
@@ -34,8 +34,10 @@ export default function RootLayout({
              */
             routerConfig={extractRouterConfig(ourFileRouter)}
           />
-          <TopNavigation />
-          <div className="px-2">{children}</div>
+          <div className="grid h-screen grid-rows-[auto,1fr]">
+            <TopNavigation />
+            <main className="overflow-y-scroll">{children}</main>
+          </div>
           {modal}
           <div id="modal-root"></div>
         </body>
